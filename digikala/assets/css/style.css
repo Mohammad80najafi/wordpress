@@ -1,0 +1,128 @@
+.dk {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: grid;
+  grid-template-columns: 260px auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.dk_right {
+  position: relative;
+}
+
+.dk_colors {
+  position: absolute;
+  z-index: 2;
+}
+
+.dk_color {
+  color: #a2a2a2;
+  font-size: 12px;
+}
+
+.dk_color span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dk_left h2 {
+  font-size: 32px;
+  color: #424242;
+  margin-top: 0;
+  border: none !important;
+}
+
+.dk_description {
+  line-height: 200%;
+  max-height: 145px;
+  overflow: hidden;
+}
+
+.dk_thumbnails {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.dk_thumbnails img {
+  width: 50px;
+  border: 1px solid #c8c7c7;
+  border-radius: 4px;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dk_thumbnails img:hover {
+  border: 1px solid red;
+}
+
+.dk_left footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dk_left footer a {
+  color: #fff;
+  background-color: #ef4056;
+  padding: 8px 15px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.dk_left footer a:hover {
+  text-decoration: none;
+  background-color: red;
+}
+
+.dk_discount {
+  background-color: red;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.dk_footer_left del {
+  color: red;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.dk_footer_left del::before {
+  content: "";
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-15deg);
+}
+
+.dk_footer_left ins {
+  color: green;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dk_footer_left ins span {
+  color: #c5c5c5;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.active {
+  border: 1px solid red;
+}
